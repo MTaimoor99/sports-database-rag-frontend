@@ -1,6 +1,6 @@
 import { ENDPOINTS } from "../constants"
 
-export async function postQuery(query: string) {
+export async function postUserQuery(query: string) {
   const response = await fetch(ENDPOINTS.PROCESS_USER_QUERY, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
