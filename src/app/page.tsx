@@ -3,12 +3,9 @@
 import { useState, useRef, useEffect } from "react";
 import { Send } from 'lucide-react';
 import { sendUserQuery } from "../services/userChatService";
-import type { UserQueryResponse } from "../types/user-chat/userChat";
+import type { Message, UserQueryResponse } from "../types/user-chat/userChat";
 
-interface Message {
-  role: "user" | "assistant";
-  text: string;
-}
+
 
 export default function Home() {
   const queryRef = useRef<HTMLInputElement>(null);

@@ -10,3 +10,8 @@ export interface AnswerBlock {
 export interface UserQueryResponse {
   answer: AnswerBlock[];
 }
+
+export interface Message {
+  role: "user" | "assistant";
+  text: string;
+}
